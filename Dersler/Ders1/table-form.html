@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Form</title>
+</head>
+<body>
+    <h1>HTML Table ve Form Elementleri</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>İsim</th>
+                <th>Soyisim</th>
+                <th>Yaş</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Beyza</td>
+                <td>Karakış</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td>Dilan</td>
+                <td>Kaya</td>
+                <td>25</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <br>
+    <form>
+        <div>
+            <label for="name">Adınız:</label>
+            <input type="text" id="name" name="name">
+        </div>
+        <div>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="birthdate">Doğum Tarihi:</label>
+            <input type="date" name="birthdate" id="birthdate">
+        </div>
+        <div>
+            <label for="gender">Cinsiyet</label>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Erkek</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Kız</label>
+        </div>
+        <div>
+            <label>Programlama Dilleri:</label>
+            <input type="checkbox" name="languages" id="javascript" value="javascript">
+            <label for="javascript">JavaScript</label>
+            <input type="checkbox" name="languages" id="java" value="java">
+            <label for="java">Java</label>
+            <input type="checkbox" name="languages" id="python" value="python">
+            <label for="python">Python</label>
+            <input type="checkbox" name="languages" id="c" value="c">
+            <label for="c">C</label>
+        </div>
+        <div>
+            <label for="password">Şifre:</label>
+            <input type="password" name="password" id="password">
+        </div>
+        <input type="submit" value="Gönder">
+    </form>
+</body>
+</html>
